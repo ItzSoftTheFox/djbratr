@@ -1,377 +1,81 @@
 <!DOCTYPE html>
-<html lang="cs" class="scroll-smooth">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>DJ služby a ozvučení akcí | Profesionální DJ</title>
-    <meta name="description" content="Profesionální DJ služby a ozvučení akcí pro svatby, oslavy a firemní večírky. Kvalitní zvuk, moderní osvětlení a nezapomenutelná atmosféra.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>DJ Web</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Montserrat', 'sans-serif'],
-                    },
-                    colors: {
-                        darkBg: '#0a0a0a', 
-                        darkSection: '#111111',
-                        accent: '#ff0055', // Vibrant neon pink/red
-                        accentSecondary: '#7000ff' // Deep purple
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        serif: ['"Roboto Slab"', 'serif'], 
                     }
                 }
             }
         }
     </script>
-    <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #ff0055, #7000ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-glow {
-            box-shadow: 0 0 20px rgba(255, 0, 85, 0.2);
-        }
-    </style>
 </head>
-<body class="bg-darkBg text-gray-300 font-sans antialiased selection:bg-accent selection:text-white">
+<body class="bg-neutral-950 m-0 p-0">
 
-    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between h-auto md:h-20 py-4 md:py-0">
-                <div class="text-2xl font-display font-black tracking-tighter text-white mb-4 md:mb-0">
-                    DJ<span class="text-accent">SERVICES</span>
-                </div>
-                <div class="flex flex-wrap justify-center gap-4 md:space-x-8 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">
-                    <a href="#uvod" class="hover:text-accent transition-colors text-white">Úvod</a>
-                    <a href="#o-nas" class="hover:text-accent transition-colors">O nás</a>
-                    <a href="#sluzby" class="hover:text-accent transition-colors">Služby</a>
-                    <a href="#fotogalerie" class="hover:text-accent transition-colors">Fotogalerie</a>
-                    <a href="#reference" class="hover:text-accent transition-colors">Reference</a>
-                    <a href="#cenik" class="hover:text-accent transition-colors">Ceník</a>
-                    <a href="#kontakt" class="hover:text-accent transition-colors">Kontakt</a>
-                </div>
+    <header 
+        class="w-full pt-16 pb-0 flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat relative"
+        style="background-image: linear-gradient(rgba(25, 5, 5, 0.80), rgba(20, 5, 5, 0.90)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80');"
+    >
+        <h1 class="text-gray-100 text-3xl md:text-4xl font-serif mb-16 tracking-wider text-center px-4">
+            DJ služby a ozvučení akcí
+        </h1>
+
+        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-5 px-4">
+            <a href="#" class="text-rose-600 font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Úvod</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">O nás</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Služby</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Fotogalerie</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Reference</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Ceník</a>
+            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Kontakt</a>
+        </nav>
+
+        <div class="w-full border-b border-white/20"></div>
+    </header>
+
+    <main 
+        class="w-full py-20 lg:py-28 bg-center bg-cover bg-no-repeat"
+        style="background-image: linear-gradient(rgba(15, 5, 5, 0.92), rgba(10, 5, 5, 0.96)), url('https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=1600&q=80');"
+    >
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            
+            <div class="w-full flex justify-start">
+                <img 
+                    src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" 
+                    alt="Párty atmosféra" 
+                    class="w-full max-w-[600px] aspect-[3/4] rounded-xl object-cover shadow-2xl brightness-90"
+                >
             </div>
+        <div class="flex flex-col items-start pt-1 md:pt-4">
+            
+            <h2 class="text-gray-100 text-2xl lg:text-4xl font-serif mb-8 tracking-wide">
+                Profesionální DJ pro Vaše akce
+            </h2>
+
+            <a href="#" class="flex justify-center border border-white/60 text-white/90 hover:bg-white hover:text-black rounded-full w-[40%] py-3.5 text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 mb-8">
+                O nás
+            </a>
+
+            <p class="text-neutral-300 font-serif leading-[2.2] text-base md:text-lg text-justify tracking-wide">
+                Jsme profesionální DJ služba se zaměřením na svatby, oslavy a firemní večírky. S více než 5 lety zkušeností Vám zajišťujeme nezapomenutelnou zábavu s kvalitní hudbou a moderním vybavením. Kontaktujte nás a společně vytvoříme nezapomenutelnou atmosféru na Vaší akci.
+            </p>
+            
         </div>
-    </nav>
-
-    <main>
-        <section id="uvod" class="relative min-h-screen flex items-center overflow-hidden">
-            <!-- Full-screen Background Image -->
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2000&auto=format&fit=crop" alt="DJ Hero Background" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/60 to-black/40"></div>
-                <div class="absolute inset-0 bg-gradient-to-r from-darkBg via-darkBg/40 to-transparent"></div>
-            </div>
-
-            <!-- Background effects -->
-            <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[1]">
-                <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-accent/10 rounded-full blur-[120px] animate-pulse-slow"></div>
-                <div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-accentSecondary/10 rounded-full blur-[120px] animate-pulse-slow"></div>
-            </div>
-
-            <div class="max-w-6xl mx-auto px-4 relative z-10 w-full">
-                <div class="max-w-3xl text-center md:text-left">
-                    <h1 class="text-6xl md:text-8xl font-display font-black text-white mb-6 leading-none tracking-tight">
-                        BEAT PRO VAŠI <br><span class="text-gradient">AKCI</span>
-                    </h1>
-                    
-                    <p class="text-lg md:text-xl text-gray-200 leading-relaxed mb-10 max-w-xl">
-                        Profesionální DJ služby se zaměřením na svatby, oslavy a firemní večírky. Přinášíme špičkový zvuk, moderní světelnou show a energii, která nenechá nikoho sedět.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#kontakt" class="bg-accent text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform text-sm tracking-widest uppercase bg-glow">
-                            REZERVOVAT TERMÍN
-                        </a>
-                        <a href="#sluzby" class="glass text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all text-sm tracking-widest uppercase border border-white/10">
-                            NAŠE SLUŽBY
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="o-nas" class="py-32 bg-darkSection relative">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">O nás</h2>
-                        <h3 class="text-4xl font-display font-black text-white mb-8 leading-tight">Zkušenosti, které dělají rozdíl</h3>
-                        <p class="text-gray-400 leading-relaxed mb-6">
-                            Jsme profesionální tým s více než pěti lety zkušeností v oblasti ozvučování a hudební produkce. Naším cílem není jen pouštět hudbu, ale vytvářet atmosféru, na kterou budete vy i vaši hosté dlouho vzpomínat.
-                        </p>
-                        <p class="text-gray-400 leading-relaxed">
-                            Ke každé akci přistupujeme individuálně. Ať už plánujete komorní svatbu nebo velký firemní večírek, zajistíme techniku i playlist přesně podle vašich představ.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="glass p-8 rounded-2xl text-center">
-                            <div class="text-4xl font-display font-black text-white mb-2">5+</div>
-                            <div class="text-xs text-accent font-bold uppercase tracking-widest">Let praxe</div>
-                        </div>
-                        <div class="glass p-8 rounded-2xl text-center">
-                            <div class="text-4xl font-display font-black text-white mb-2">100%</div>
-                            <div class="text-xs text-accent font-bold uppercase tracking-widest">Spolehlivost</div>
-                        </div>
-                        <div class="glass p-8 rounded-2xl text-center">
-                            <div class="text-4xl font-display font-black text-white mb-2">TOP</div>
-                            <div class="text-xs text-accent font-bold uppercase tracking-widest">Technika</div>
-                        </div>
-                        <div class="glass p-8 rounded-2xl text-center">
-                            <div class="text-4xl font-display font-black text-white mb-2">∞</div>
-                            <div class="text-xs text-accent font-bold uppercase tracking-widest">Energie</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sluzby" class="py-32 bg-darkBg">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-20">
-                    <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">Služby</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-black text-white mb-6">Co pro vás zajistíme?</h3>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all group">
-                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-accent/20 transition-colors text-accent text-2xl">💍</div>
-                        <h4 class="text-xl font-display font-bold text-white mb-4">Svatby</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">Od obřadu přes podkres k hostině až po večerní nářez na parketě. Vše s citem pro situaci.</p>
-                    </div>
-                    <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all group">
-                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-accent/20 transition-colors text-accent text-2xl">🏢</div>
-                        <h4 class="text-xl font-display font-bold text-white mb-4">Firemní akce</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">Profesionální ozvučení konferencí i pořádná party pro utužení kolektivu. Reprezentativní vystupování.</p>
-                    </div>
-                    <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all group">
-                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-accent/20 transition-colors text-accent text-2xl">⚡</div>
-                        <h4 class="text-xl font-display font-bold text-white mb-4">Oslavy & Party</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">Narozeniny nebo maturitní plesy. Hudba na přání a playlisty, které nikoho nenechají v klidu.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cenik" class="py-32 bg-darkSection relative overflow-hidden">
-            <div class="max-w-6xl mx-auto px-4 relative z-10">
-                <div class="text-center mb-20">
-                    <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">Ceník</h2>
-                    <h3 class="text-4xl font-display font-black text-white mb-6">Transparentní ceny</h3>
-                    <p class="text-gray-400 max-w-2xl mx-auto">Ceny jsou orientační a odvíjejí se od náročnosti akce a lokality. Kontaktujte nás pro nezávaznou kalkulaci na míru.</p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Balíčky -->
-                    <div class="space-y-4">
-                        <div class="glass p-6 rounded-2xl flex justify-between items-center hover:bg-white/5 transition-colors">
-                            <div>
-                                <h4 class="text-white font-bold text-lg">APARATURA M (8h)</h4>
-                                <p class="text-xs text-gray-500">JBL 1200W - Ideální pro menší oslavy</p>
-                            </div>
-                            <div class="text-2xl font-display font-black text-white">8 000 <span class="text-sm font-normal text-gray-400">Kč</span></div>
-                        </div>
-
-                        <div class="glass p-6 rounded-2xl flex justify-between items-center bg-accent/5">
-                            <div>
-                                <h4 class="text-accent font-bold text-lg">APARATURA L (8h)</h4>
-                                <p class="text-xs text-gray-500 text-accent/70">LD Systems 2400W + LED Efekty</p>
-                            </div>
-                            <div class="text-2xl font-display font-black text-accent">10 000 <span class="text-sm font-normal text-accent/50">Kč</span></div>
-                        </div>
-
-                        <div class="glass p-6 rounded-2xl flex justify-between items-center hover:bg-white/5 transition-colors">
-                            <div>
-                                <h4 class="text-white font-bold text-lg">APARATURA XL (10h)</h4>
-                                <p class="text-xs text-gray-500">LD Systems 4400W + Subwoofer + LED</p>
-                            </div>
-                            <div class="text-2xl font-display font-black text-white">12 500 <span class="text-sm font-normal text-gray-400">Kč</span></div>
-                        </div>
-
-                        <div class="glass p-6 rounded-2xl flex justify-between items-center hover:bg-white/5 transition-colors">
-                            <div>
-                                <h4 class="text-white font-bold text-lg">APARATURA XXL (10h)</h4>
-                                <p class="text-xs text-gray-500">7200W, Laser, Mlhostroj, Stroboskop</p>
-                            </div>
-                            <div class="text-2xl font-display font-black text-white">15 000 <span class="text-sm font-normal text-gray-400">Kč</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Doplňky -->
-                    <div class="glass p-8 rounded-3xl">
-                        <h4 class="text-white font-display font-bold text-xl mb-8">Doplňkové služby</h4>
-                        <div class="space-y-6">
-                            <div class="flex justify-between items-start border-b border-white/5 pb-4">
-                                <div>
-                                    <p class="text-white font-bold">Playlisty na přání</p>
-                                    <p class="text-xs text-gray-500">Individuální příprava skladeb</p>
-                                </div>
-                                <span class="text-accent font-bold">v ceně</span>
-                            </div>
-                            <div class="flex justify-between items-start border-b border-white/5 pb-4">
-                                <div>
-                                    <p class="text-white font-bold">Doprava</p>
-                                    <p class="text-xs text-gray-500">Cena za každý ujetý kilometr</p>
-                                </div>
-                                <span class="text-white font-bold">9 Kč/km</span>
-                            </div>
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <p class="text-white font-bold">Přesčasy</p>
-                                    <p class="text-xs text-gray-500">Hodinová sazba nad rámec balíčku</p>
-                                </div>
-                                <span class="text-white font-bold">900 Kč/h</span>
-                            </div>
-                        </div>
-                        <div class="mt-10 p-4 rounded-xl bg-white/5 text-xs text-gray-500 leading-relaxed italic">
-                            Všechny ceny jsou transparentní a bez skrytých poplatků. Vždy se snažíme najít individuální řešení, které bude vyhovovat vašemu rozpočtu.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="fotogalerie" class="py-32 bg-darkBg">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">Showcase</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-black text-white mb-12">Atmosféra v obrazech</h3>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=800&auto=format&fit=crop" alt="DJ Table" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop" alt="Party Crowd" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop" alt="DJ Equipment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop" alt="Club Lights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1574391884720-bbc37bb1593c?q=80&w=800&auto=format&fit=crop" alt="Wedding Dance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=800&auto=format&fit=crop" alt="Sound Mix" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1520110120835-c96a9f54c9d3?q=80&w=800&auto=format&fit=crop" alt="Neon Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="aspect-square rounded-2xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1517230807284-4ee71538bc41?q=80&w=800&auto=format&fit=crop" alt="Live Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                </div>
-
-                <a href="#kontakt" class="inline-block text-accent font-bold hover:text-white transition-colors text-sm tracking-[0.3em] uppercase underline underline-offset-8">
-                    Chci taky takovou party
-                </a>
-            </div>
-        </section>
-
-        <section id="reference" class="py-32 bg-darkSection">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-20">
-                    <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">Reference</h2>
-                    <h3 class="text-4xl font-display font-black text-white mb-6">Řekli o nás</h3>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="glass p-10 rounded-3xl relative">
-                        <div class="absolute -top-4 -left-4 text-6xl text-accent/20 font-serif">"</div>
-                        <p class="text-gray-300 italic mb-8 relative z-10">
-                            "DJ Služby jsou naprosto skvělé! Na naší svatbě se postarali o nezapomenutelnou atmosféru a všichni hosté tančili do rána. Profesionální přístup a skvělá hudba, rozhodně doporučuji!"
-                        </p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">PK</div>
-                            <div class="text-white font-bold">Petr K., novomanžel</div>
-                        </div>
-                    </div>
-
-                    <div class="glass p-10 rounded-3xl relative">
-                        <div class="absolute -top-4 -left-4 text-6xl text-accent/20 font-serif">"</div>
-                        <p class="text-gray-300 italic mb-8 relative z-10">
-                            "Náš firemní večírek byl díky DJ naprosto úžasný! Dokázal rozproudit atmosféru a všechny nás udržet na parketě až do rána. Určitě ho budeme opět využívat."
-                        </p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-accentSecondary/20 flex items-center justify-center text-accentSecondary font-bold">PS</div>
-                            <div class="text-white font-bold">Petr S., Event Manager</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="kontakt" class="py-32 bg-darkBg relative">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-                    <div>
-                        <h2 class="text-xs font-bold tracking-[0.5em] text-accent uppercase mb-4">Kontakt</h2>
-                        <h3 class="text-5xl font-display font-black text-white mb-8">Pojďme to <br><span class="text-gradient">rozjet</span></h3>
-                        
-                        <div class="space-y-8 mt-12">
-                            <div class="flex items-center gap-6">
-                                <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center text-accent">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">E-mail</p>
-                                    <p class="text-white font-bold">soundkk@seznam.cz</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-6">
-                                <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center text-accent">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Telefon</p>
-                                    <p class="text-white font-bold">+420 604 136 039</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="glass p-10 rounded-3xl">
-                        <form class="space-y-6">
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-gray-400 uppercase tracking-widest">Vaše jméno</label>
-                                <input type="text" placeholder="Jan Novák" class="w-full bg-white/5 text-white p-4 rounded-xl focus:outline-none focus:ring-1 focus:ring-accent transition-colors" required>
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-gray-400 uppercase tracking-widest">E-mail</label>
-                                <input type="email" placeholder="jan.novak@seznam.cz" class="w-full bg-white/5 text-white p-4 rounded-xl focus:outline-none focus:ring-1 focus:ring-accent transition-colors" required>
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-gray-400 uppercase tracking-widest">O jakou akci jde?</label>
-                                <textarea rows="4" placeholder="Svatba, firemní večírek, oslava..." class="w-full bg-white/5 text-white p-4 rounded-xl focus:outline-none focus:ring-1 focus:ring-accent transition-colors" required></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-accent text-white py-5 rounded-xl font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-accent/20 uppercase tracking-widest text-sm">
-                                Odeslat poptávku
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
-
-    <footer class="py-10 border-t border-white/5 bg-darkBg text-center text-xs text-gray-600 uppercase tracking-widest">
-        &copy; 2026 DJ SERVICES. Všechna práva vyhrazena.
-    </footer>
 
 </body>
 </html>
