@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DJ Web</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
-    
     <script>
         tailwind.config = {
             theme: {
@@ -25,57 +22,80 @@
 </head>
 <body class="bg-neutral-950 m-0 p-0">
 
-    <header 
-        class="w-full pt-16 pb-0 flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat relative"
-        style="background-image: linear-gradient(rgba(25, 5, 5, 0.80), rgba(20, 5, 5, 0.90)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80');"
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full pt-20 flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat relative" style="background-image: linear-gradient(rgba(25, 5, 5, 0.80), rgba(20, 5, 5, 0.90)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80');">
+            <h1 class="text-gray-100 text-3xl md:text-4xl font-serif mb-12 tracking-wider text-center px-4">
+                DJ služby a ozvučení akcí
+            </h1>
+            <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-4 px-4">
+                <a href="#" class="text-rose-600 font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Úvod</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">O nás</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Služby</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Fotogalerie</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Reference</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Ceník</a>
+                <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Kontakt</a>
+            </nav>
+            <div class="w-full border-b border-white/20"></div>
+        </header>
+
+        <main class="w-full flex-grow pt-16 pb-8 bg-center bg-cover bg-no-repeat flex items-start" style="background-image: linear-gradient(rgba(15, 5, 5, 0.92), rgba(10, 5, 5, 0.96)), url('https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=1600&q=80');">
+            <div class="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+                <div class="w-full flex justify-start">
+                    <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" alt="Párty atmosféra" class="w-full max-w-[500px] aspect-[3/4] rounded-xl object-cover shadow-2xl brightness-90">
+                </div>
+                <div class="flex flex-col items-start pt-1 md:pt-4">
+                    <h2 class="text-gray-100 text-2xl lg:text-4xl font-serif mb-8 tracking-wide">
+                        Profesionální DJ pro Vaše akce
+                    </h2>
+                    <a href="#" class="inline-flex justify-center border border-white/60 text-white/90 hover:bg-white hover:text-black rounded-full px-10 py-4 text-xs font-extrabold tracking-[0.2em] uppercase transition-all duration-300 mb-8">
+                        O nás
+                    </a>
+                    <p class="text-neutral-300 font-serif leading-[2.2] text-base md:text-lg text-justify tracking-wide">
+                        Jsme profesionální DJ služba se zaměřením na svatby, oslavy a firemní večírky. S více než 5 lety zkušeností Vám zajišťujeme nezapomenutelnou zábavu s kvalitní hudbou a moderním vybavením. Kontaktujte nás a společně vytvoříme nezapomenutelnou atmosféru na Vaší akci.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <section 
+        class="w-full min-h-screen flex items-center py-20 lg:py-0 bg-[#121212] bg-repeat"
+        style="background-image: url('https://www.transparenttextures.com/patterns/black-scales.png');"
     >
-        <h1 class="text-gray-100 text-3xl md:text-4xl font-serif mb-16 tracking-wider text-center px-4">
-            DJ služby a ozvučení akcí
-        </h1>
-
-        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-5 px-4">
-            <a href="#" class="text-rose-600 font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Úvod</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">O nás</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Služby</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Fotogalerie</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Reference</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Ceník</a>
-            <a href="#" class="text-neutral-400 hover:text-white font-medium text-sm md:text-base tracking-wide transition-colors duration-300">Kontakt</a>
-        </nav>
-
-        <div class="w-full border-b border-white/20"></div>
-    </header>
-
-    <main 
-        class="w-full py-20 lg:py-28 bg-center bg-cover bg-no-repeat"
-        style="background-image: linear-gradient(rgba(15, 5, 5, 0.92), rgba(10, 5, 5, 0.96)), url('https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=1600&q=80');"
-    >
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start w-full">
             
-            <div class="w-full flex justify-start">
+            <div class="flex flex-col items-start w-full">
+                <h2 class="text-gray-100 text-2xl lg:text-3xl font-serif mb-6 tracking-wide">
+                    Zábava na parketě
+                </h2>
                 <img 
-                    src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" 
-                    alt="Párty atmosféra" 
-                    class="w-full max-w-[600px] aspect-[3/4] rounded-xl object-cover shadow-2xl brightness-90"
+                    src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=800&q=80" 
+                    alt="DJ hraje na párty" 
+                    class="w-full max-w-[460px] aspect-[3/4] rounded-xl object-cover shadow-2xl brightness-90"
                 >
             </div>
-        <div class="flex flex-col items-start pt-1 md:pt-4">
-            
-            <h2 class="text-gray-100 text-2xl lg:text-4xl font-serif mb-8 tracking-wide">
-                Profesionální DJ pro Vaše akce
-            </h2>
 
-            <a href="#" class="flex justify-center border border-white/60 text-white/90 hover:bg-white hover:text-black rounded-full w-[40%] py-3.5 text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 mb-8">
-                O nás
-            </a>
+            <div class="flex flex-col items-start lg:pt-0">
+                <p class="text-neutral-300 font-serif leading-[2.2] text-sm md:text-base text-justify tracking-wide mb-8 pr-0 lg:pr-6">
+                    Naše DJ služby jsou idealní volbou pro vaše svatby, oslavy a firemní večírky. S dlouholetou zkušeností v oboru a moderním vybavením vám zaručíme nezapomenutelnou zábavu a skvělou atmosféru. Společně vytvoříme nezapomenutelný hudební mix, který bude přesně odpovídat Vašim přáním a potřebám.
+                </p>
 
-            <p class="text-neutral-300 font-serif leading-[2.2] text-base md:text-lg text-justify tracking-wide">
-                Jsme profesionální DJ služba se zaměřením na svatby, oslavy a firemní večírky. S více než 5 lety zkušeností Vám zajišťujeme nezapomenutelnou zábavu s kvalitní hudbou a moderním vybavením. Kontaktujte nás a společně vytvoříme nezapomenutelnou atmosféru na Vaší akci.
-            </p>
-            
+                <ul class="flex flex-col gap-3 mb-12 text-neutral-300 font-serif text-sm md:text-base">
+                    <li class="flex items-center gap-4"><span class="text-white text-sm">›</span> Svatební mix</li>
+                    <li class="flex items-center gap-4"><span class="text-white text-sm">›</span> Firemní párty</li>
+                    <li class="flex items-center gap-4"><span class="text-white text-sm">›</span> Oslava s beatem</li>
+                    <li class="flex items-center gap-4"><span class="text-white text-sm">›</span> Ozvučení akcí</li>
+                    <li class="flex items-center gap-4"><span class="text-white text-sm">›</span> Ozvučení DJ's</li>
+                </ul>
+
+                <a href="#" class="inline-flex justify-center border border-white/60 text-white/90 hover:bg-white hover:text-black rounded-full px-10 py-4 text-xs font-extrabold tracking-[0.2em] uppercase transition-all duration-300">
+                    Kompletní nabídka služeb
+                </a>
+            </div>
+
         </div>
-        </div>
-    </main>
+    </section>
 
 </body>
 </html>
